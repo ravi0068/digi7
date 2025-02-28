@@ -1,0 +1,258 @@
+
+/* desktop devices (portrait and landscapt) */
+@media only screen and (min-width:1440){
+
+}
+ /* for laptop devices screen  991(portrait and landscape) */
+
+ @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .hero {
+      /* max-width: 90%; Adjust width for medium screens */
+      /* padding: 3rem 1.5rem;
+      gap: 1.5rem; */
+    }
+    .circuit-paths {
+        width: 79%;
+        height: 79%;
+    }
+  
+    .content {
+      max-width: 500px; /* Slightly reduce content width */
+    }
+  
+    .title {
+      font-size: 2.4rem; /* Adjust heading size */
+    }
+  
+    .description {
+      font-size: 1rem; /* Optimize text readability */
+    }
+  
+    .cta-buttons {
+      gap: 0.8rem; /* Reduce button spacing */
+    }
+  
+    .token-visual {
+      height: 500px; /* Adjust visual size */
+    }
+  
+    .token-container {
+      width: 350px;
+      height: 350px;
+ 
+
+  }
+}
+
+/* for ipad & tablet 768*/
+@media only screen and (min-width:768px) and (max-width:1023px){
+  
+    .hero {
+        /* align-items: flex-start; */
+    }
+
+    .hero {
+        display: grid    ;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        padding-bottom: 0;
+    }
+
+    .token-visual {
+        height: 500px;
+    }
+.circuit-paths {
+    left: 42px;
+    width: 79%;
+    height: 79%;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+}
+.title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+    text-align: center;
+
+}
+
+.token-display img {
+    width: 75%;
+}
+
+/* --  Why Choose DIGI7 responsive css  -- */
+.token-display img {
+    width: 75%;
+}
+.About {
+    padding-top: 0px;
+}
+#content-section{
+    text-align: center;
+}
+
+
+#token-display-section{
+    order: 2;
+  
+  }
+#content-section{
+    order: 1;
+}
+
+
+
+    .timeline ul li:nth-child(even) div {
+        left: -329px;
+    }
+    .content {
+        justify-items: center;
+    }
+    .content p{
+        justify-items: center;
+    }
+
+   
+
+    .timeline ul li div {
+        width: 300px;
+    }
+
+}
+
+
+
+/* mobile devices 360 (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    .hero {
+      grid-template-columns: 1fr; /* Change to single-column layout */
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+  
+    .content {
+      max-width: 100%; /* Allow content to use full width */
+    }
+  
+    .title {
+      font-size: 2rem; /* Reduce title size */
+    }
+  
+    .description {
+      font-size: 1rem; /* Adjust text for better readability */
+    }
+  
+    .cta-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    .token-visual {
+      height: 400px; /* Reduce token size */
+    }
+  
+    .token-container {
+      width: 225px;
+      height: 225px;
+    }
+
+/* --  Why Choose DIGI7 responsive css  -- */
+
+
+    .About {
+        padding-top: 0px;
+    }
+    .About-title {
+        font-size: 2.5rem;
+    }
+
+    .token-display {
+        height: 325px;
+    }
+    .token-display img {
+        width: 80%;
+    }
+    #token-display-section{
+        order: 2;
+      
+      }
+      #content-section{
+        text-align: center;
+    }
+    #content-section{
+        order: 1;
+    }
+
+/* ----  top-priorities-section ----  */
+
+
+
+    .top-priorities-section {
+        padding: 50px 0;
+    }
+/* ---- roadmap responsive css ---- */
+
+
+.logo {
+    text-align: center;
+}
+.text-white {
+    text-align: center;
+}
+
+.token-info {
+    text-align: center;
+}
+
+.timeline ul li {
+    margin: 0;
+}
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent rgba(255, 255, 255, 0.1) transparent transparent;
+    }
+
+    .timeline ul li:nth-child(even) div {
+        left: 35px;
+        text-align: left;
+    }
+
+    .timeline ul li div {
+        width: 277px;
+    }
+
+
+
+
+
+
+
+
+/* ---- footer pages tag responsive css ----  */
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+    .parter_row img {
+        max-width: 93px;
+    }
+    .section-padding {
+        padding: 50px 0;
+        padding-top: 5px;
+    }
+    
+  }
+
+
+
+
+
+
