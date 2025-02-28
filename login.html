@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digi-7</title>
+    <link rel="icon" type="#" href="images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+
+    <section class="login-section">
+        <!-- Background Particles -->
+        <div class="particle-container"></div>
+
+        <!-- Login Card -->
+        <div class="login-container" id="loginBox">
+            <img src="image/burnerlogo.png" alt="DIGI7 Logo" class="login-logo" />
+            <h2 class="login-title">Log In</h2>
+            <p class="login-subtitle">Login to continue in your DIGI7 account</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Enter Username</label>
+                    <input type="text" id="username" placeholder="Username" />
+                </div>
+
+                <div class="input-group password-container">
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" placeholder="Password" />
+                    <span class="toggle-password" onclick="togglePassword()"><i class="ri-eye-close-line"></i></span>
+                </div>
+
+                <button type="submit" class="login-button">Login</button>
+                <a href="#" class="forgot-password">Forgot User Code</a>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        
+document.addEventListener("DOMContentLoaded", () => {
+    const logiSection = document.querySelector(".login-section");
+    
+    if (!logiSection) {
+        console.error("logi-section not found!");
+        return;
+    }
+
+    let particleContainer = logiSection.querySelector(".particle-container");
+
+    // If the .particle-container is not found inside logi-section, create it
+    if (!particleContainer) {
+        particleContainer = document.createElement("div");
+        particleContainer.classList.add("particle-container");
+        logiSection.appendChild(particleContainer);
+    }
+
+    for (let i = 0; i < 30; i++) {
+        let particle = document.createElement("div");
+        particle.classList.add("particle");
+
+        // Random positioning within the container
+        particle.style.top = `${Math.random() * 100}%`;
+        particle.style.left = `${Math.random() * 100}%`;
+
+        // Random animation duration for variation
+        particle.style.animationDuration = `${5 + Math.random() * 5}s`;
+
+        particleContainer.appendChild(particle);
+    }
+});
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+
+</html>
